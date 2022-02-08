@@ -2,17 +2,16 @@
 
 @use '../variables/fontAwesome' as *; // nope. 
 
-// can't do this. with requires (), and when I add my variable, it wants to be a key-value pair
-// why can't with take a variable that's already a map?
-@use '../../../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/icons' with $fontAwesomeVariables;
 
 @debug '********* icons.scss';
 @debug '!=!=!=!=!= HERE ARE THE fontAwesomeVariables FROM variables/fontAwesome.scss';
 @debug $fontAwesomeVariables;
 
-@debug '!=!=!=!= HERE IS faVariables FROM variables/fontAwesome.scss';
-// todo: figure out howTF to send these vars to icons
+// NOPE
+// Debug says they're here. how do they become undefined?
+// it's because they have the $ removed -- so how do I add it back?
+@include meta.load-css('../../../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/icons', 
+    $with: $fontAwesomeVariables
+);
 
-// @debug '!=!=!= HERE BE MODULE VARIABLES (using meta.module-variables)'; // NEVER HITS
-// @debug meta.module-variables('../variables/fontAwesome');
 @debug '///////// icons.scss';
