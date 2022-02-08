@@ -1,17 +1,14 @@
 @use 'sass:meta';
 
-@use '../variables/fontAwesome' as *; // nope. 
-
+@use '../../../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/variables' as faVariables;
 
 @debug '********* icons.scss';
-@debug '!=!=!=!=!= HERE ARE THE fontAwesomeVariables FROM variables/fontAwesome.scss';
-@debug $fontAwesomeVariables;
+
 
 // NOPE
-// Debug says they're here. how do they become undefined?
-// it's because they have the $ removed -- so how do I add it back?
+// not even sure how this doesn't work b/c specs say meta.module-variables removes the $
 @include meta.load-css('../../../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/icons', 
-    $with: $fontAwesomeVariables
+    $with: meta.module-variables('faVariables')
 );
 
 @debug '///////// icons.scss';
