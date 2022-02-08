@@ -1,7 +1,7 @@
 @use 'sass:meta';
 
 @use '../variables/fontAwesome' as *; // nope. 
-// @use '../../../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/icons';
+@use '../../../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/icons' with $fontAwesomeVariables;
 
 @debug '********* icons.scss';
 @debug '!=!=!=!=!= HERE ARE THE fontAwesomeVariables FROM variables/fontAwesome.scss';
