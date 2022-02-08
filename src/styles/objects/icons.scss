@@ -4,11 +4,15 @@
 
 @debug '********* icons.scss';
 
+// set module-vars to variable
+$faVars : meta.module-variables('faVariables');
 
+// YUP. DEFINITELY THERE WITHOUT THE $
+@debug $faVars;
 // NOPE
-// not even sure how this doesn't work b/c specs say meta.module-variables removes the $
+// STILL DOESN'T WORK
 @include meta.load-css('../../../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/icons', 
-    $with: meta.module-variables('faVariables')
+    $with: $faVars
 );
 
 @debug '///////// icons.scss';
