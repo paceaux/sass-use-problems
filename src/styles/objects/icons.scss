@@ -1,0 +1,15 @@
+@use 'sass:meta';
+
+@use '../variables/fontAwesome' as *; // nope. 
+// @use '../../../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/icons';
+
+@debug '********* icons.scss';
+@debug '!=!=!=!=!= HERE ARE THE fontAwesomeVariables FROM variables/fontAwesome.scss';
+@debug $fontAwesomeVariables;
+
+@debug '!=!=!=!= HERE IS faVariables FROM variables/fontAwesome.scss';
+// todo: figure out howTF to send these vars to icons
+
+// @debug '!=!=!= HERE BE MODULE VARIABLES (using meta.module-variables)'; // NEVER HITS
+// @debug meta.module-variables('../variables/fontAwesome');
+@debug '///////// icons.scss';

@@ -1,0 +1,33 @@
+@use '../variables/index' as *;
+
+
+:root {
+    --colorNeutralDark: $colorNeutralDark;
+    --colorNeutralDark: $colorNeutralDark;
+    --colorNeutral: $colorNeutral;
+    --colorNeutralLight: $colorNeutralLight;
+    --colorNeutralLighter: $colorNeutralLighter;
+    --colorCool: $colorCool;
+    --colorCoolDarker: $colorCoolDarker;
+
+    --baseLineHeight: $baseLineHeight;
+    --smallLineHeight: $smallLineHeight;
+
+    --baseFontSize: $baseFontSize;
+    --baseTextSize: $baseTextSize;
+    --biggestTextSize: $biggestTextSize;
+    --biggerTextSize: $biggerTextSize;
+    --bigTextSize: $bigTextSize;
+    --smallTextSize: $smallTextSize;
+    --smallerTextSize: $smallerTextSize;
+    --smallestTextSize: $smallestTextSize;
+
+    --baseTitleSize: $baseTitleSize;
+    --biggestTitleSize: $biggestTitleSize;
+    --biggerTitleSize: $biggerTitleSize;
+    --bigTitleSize: $bigTitleSize;
+    --smallTitleSize: $smallTitleSize;
+    --smallerTitleSize: $smallerTitleSize;
+    --smallestTitleSize: $smallestTitleSize;
+}
+

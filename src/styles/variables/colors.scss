@@ -1,0 +1,8 @@
+@use 'color-palette';
+
+$baseTextColor: color-palette.$colorNeutralDarker !default;
+$baseEditorialTextColor: color-palette.$colorNeutralDark !default;
+$baseLinkColor: color-palette.$colorCool !default;
+$baseLinkColorHover: color-palette.$colorCoolDarker !default;
+$baseInlineBorderColor: color-palette.$colorNeutralLight !default;
+
