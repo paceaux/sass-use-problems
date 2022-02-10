@@ -1,4 +1,7 @@
 @use 'sass:meta';
-@use 'variables/index' as *;
 @use 'elements/root';
-@use 'objects/icons';
+@use 'variables/fontAwesome' as faVars;
+
+@include meta.load-css('objects/icons', 
+    $with: meta.module-variables(faVars)
+)
