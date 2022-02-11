@@ -1,8 +1,10 @@
 @use 'sass:meta';
 @use 'elements/root';
 
-$fa-css-prefix: fa !default;
-$fa-var-glass: "\f000";
+$fa-css-prefix: 'fa' !default;
+$fa-var-glass: "\f000" !default;
+
+
 
 @include meta.load-css('objects/icons', 
     $with: (
