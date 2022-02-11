@@ -1,7 +1,12 @@
 @use 'sass:meta';
 @use 'elements/root';
-@use 'variables/fontAwesome' as faVars;
+
+$fa-css-prefix: fa !default;
+$fa-var-glass: "\f000";
 
 @include meta.load-css('objects/icons', 
-    $with: meta.module-variables(faVars)
+    $with: (
+        $fa-css-prefix: fa,
+        $fa-var-glass: "\f000",
+    )
 )
